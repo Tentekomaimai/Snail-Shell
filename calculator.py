@@ -2,11 +2,11 @@
 import sys
 try:
     x = input('式を入力:')
-    print(float(x))
+    print("答えは、" + str(float(x)) + "です。")
 except:
     print("エラー")
     sys.exit()
-y = input('計算を続けるには0 止めるには1を入力:')
+y = input('計算を続けるには0 終わるには1を入力:')
 while y == 0:
     try:
         x = input('Input :')
