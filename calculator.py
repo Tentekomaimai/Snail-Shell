@@ -1,23 +1,23 @@
 # coding: utf-8
 import sys
-import time
 try:
-    x = input('Input :')
+    x = input('式を入力:')
     print(float(x))
 except:
-    print("Error! Try again.")
-    x = input('Input :')
-y = input('keep calcurating → 0 , exit → 1:')
+    print("エラー")
+    sys.exit()
+y = input('計算を続けるには0 止めるには1を入力:')
 while y == 0:
     try:
         x = input('Input :')
         print(float(x))
     except:
-        print("Error! Try again.")
-    y = input('keep calcurating → 0 , exit → 1:')
+        print("エラー")
+        sys.exit()
+    y = input('計算を続けるには0 止めるには1を入力:')
 if y == 1:
-    print("Good bye")
+    print("終了します")
     sys.exit()
 else:
-    print("Error! This application has stopped.")
+    print("エラー")
     sys.exit()
